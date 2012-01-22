@@ -23,6 +23,8 @@ We do have other options, of course:
  [g]: http://geocoder.us/
  [n]: http://wiki.openstreetmap.org/wiki/Nominatim
  
-To test these options against Google, I'm using a sample dataset that illustrates some of the known problems working with imperfect input. I've downloaded a list of crime incidents in Washington, DC, in 2011. We'll use the first 500 rows to keep from hitting rate limits.
+To test these options against Google, I'm using a sample dataset that illustrates some of the known problems working with imperfect input. I've downloaded a list of [crime incidents in Washington, DC, in 2011][cirme]. We'll use the first 500 rows to keep from hitting rate limits.
+
+ [crime]: http://data.octo.dc.gov/feeds/crime_incidents/archive/crime_incidents_2011_CSV.zip
 
 Every geocoding run will overwrite the results data in a file called `data/<geocoder>.csv` and log the result to `data/results.csv`.
