@@ -1,5 +1,9 @@
 Comparing Geocoders
-================
+===================
+
+*This is a test project to generate data for a presentation at [NICAR12][n12]. Feel free to borrow any code you find here.*
+
+ [n12]: http://ire.org/events-and-training/event/5/47/ "Own your own map stack: Open source maps from the ground up"
 
 If you're thinking about moving off of Google Maps, by far the most difficult piece of the stack to replicate is its geocoder. Google probably has the most comprehensive database and by far the best address parsing. It also has this problematic line in its terms of service:
 
