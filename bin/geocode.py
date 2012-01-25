@@ -5,12 +5,7 @@ This script is meant to test various geocoders. Data will be
 overwritten on each run.
 """
 import argparse
-from geopy import geocoders
-
-GEOCODERS = {
-    'google': geocoders.Google(),
-    'geocoderdotus': geocoders.GeocoderDotUs()
-}
+import geocoders
 
 def geocode(file, geocoder):
     pass
