@@ -37,5 +37,21 @@ def yahoo(query):
         result = c['ResultSet']['Results'][0]
         return result['latitude'], result['longitude']
     except (KeyError, IndexError), e:
-        print e
         return None, None
+
+def mapquest(query):
+    BASE = "http://open.mapquestapi.com/nominatim/v1/search?"
+    params = {
+        'format': 'json',
+        'q': query
+    }
+    url = BASE + urllib.urlencode(params)
+    r, c = http.request(url)
+    c = json.loads(c)
+    try:
+        result = c[0];
+        return result['lat'], result['lon']
+    except (KeyError, IndexError), e:
+        return None, None
+
+
